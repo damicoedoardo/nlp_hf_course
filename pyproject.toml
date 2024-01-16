@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nlp-hf-course"
+version = "0.1.0"
+description = ""
+authors = ["Edoardo D'Amico <damicoedoardo95@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nlp_hf_course"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.1.4"
+transformers = {extras = ["sentencepiece"], version = "^4.36.2"}
+torch = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
